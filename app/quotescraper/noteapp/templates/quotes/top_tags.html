@@ -1,0 +1,10 @@
+{% block content %}
+<h2>Top Ten tags</h2>
+{% for tag, size in popular_tags %}
+<span class="tag-item pt-1" style="display: block;">
+    <a class="tag" style="font-size: {{ size }}px; text-decoration: none;" href="/tag/{{ tag.name }}">
+        {{ tag.name }}
+    </a>
+</span>
+{% endfor %}
+{% endblock %}

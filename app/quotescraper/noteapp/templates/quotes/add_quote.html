@@ -1,0 +1,38 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<div>
+    <h2>Add Author</h2>
+</div>
+<form action="{% url 'quotes:add_quote' %}" method="post">
+    {% csrf_token %}
+    <div class="row mb-3">
+        <div class="form-group col-xs-3">
+            <label>Quote: <br>
+                {{ form.quote }}
+            </label>
+            <span>{{ form.errors.quote }}</span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="form-group col-xs-3">
+            <label>Tags: <br>
+                {{ form.tags }}
+            </label>
+            <span>{{ form.errors.tags }}</span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="form-group col-xs-3">
+            <label>Author: <br>
+                {{ form.author }}
+            </label>
+            <span>{{ form.errors.author }}</span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+
+</form>
+
+{% endblock %}

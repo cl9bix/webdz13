@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "dz11"
+version = "0.1.0"
+description = ""
+authors = ["Cl9bix"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
+alembic = "^1.11.2"
+sqlalchemy = "^2.0.19"
+asyncpg = "^0.28.0"
+pydantic = "^2.1.1"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "web10part2"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.2"
+pymongo = "^4.4.0"
+psycopg2-binary = "^2.9.6"
+django-environ = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
